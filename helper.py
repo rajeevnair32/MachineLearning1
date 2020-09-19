@@ -98,6 +98,8 @@ def print_results(result_dict):
     print("Results from Testing Data")
     print(test_df.to_string(index=False))
 
+    plt.cla()
+    plt.clf()
     ax = plt.gca()
     test_df.plot(kind='line', x='Classification Type', y='Accuracy', ax=ax)
     test_df.plot(kind='line', x='Classification Type', y='Precision', ax=ax)
@@ -373,6 +375,9 @@ def plot_learning_curve(classifier_fn, name_of_y_col, name_of_x_cols, dataset, t
     X = dataset[name_of_x_cols]
     y = dataset[name_of_y_col]
 
+    plt.cla()
+    plt.clf()
+    
     if axes is None:
         _, axes = plt.subplots(3, 1, figsize=(5, 15))
 
@@ -437,6 +442,9 @@ def plot_loss_curve(name_of_y_col, name_of_x_cols, dataset, learning_rate):
     X = dataset[name_of_x_cols]
     y = dataset[name_of_y_col]
 
+    plt.cla()
+    plt.clf()
+    
     clf = MLPClassifier(learning_rate_init=learning_rate)
     clf.fit(X, y)
     plt.title('MLP Classifier Loss Curve')
@@ -458,6 +466,9 @@ def plot_validation_curve(classifier_fn, name_of_y_col, name_of_x_cols, dataset,
     test_scores_mean = np.mean(test_scores, axis=1)
     test_scores_std = np.std(test_scores, axis=1)
 
+    plt.cla()
+    plt.clf()
+    
     plt.title(title)
     plt.xlabel(param_name)
     plt.ylabel("Score")
