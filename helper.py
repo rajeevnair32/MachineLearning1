@@ -12,6 +12,9 @@ from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.model_selection import ShuffleSplit
 
+import warnings
+warnings.filterwarnings("ignore")
+
 """
 Helper functions
 """

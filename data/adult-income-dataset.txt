@@ -1,0 +1,61 @@
+(45222, 15)
+                age        fnlwgt  ...  capital-loss  hours-per-week
+count  45222.000000  4.522200e+04  ...  45222.000000    45222.000000
+mean      38.547941  1.897347e+05  ...     88.595418       40.938017
+std       13.217870  1.056392e+05  ...    404.956092       12.007508
+min       17.000000  1.349200e+04  ...      0.000000        1.000000
+25%       28.000000  1.173882e+05  ...      0.000000       40.000000
+50%       37.000000  1.783160e+05  ...      0.000000       40.000000
+75%       47.000000  2.379260e+05  ...      0.000000       45.000000
+max       90.000000  1.490400e+06  ...   4356.000000       99.000000
+
+[8 rows x 6 columns]
+0.7521560302507629
+0.2478439697492371
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   25          2  226802  ...              40              38       0
+1   38          2   89814  ...              50              38       0
+2   28          1  336951  ...              40              38       1
+3   44          2  160323  ...              40              38       1
+5   34          2  198693  ...              30              38       0
+
+[5 rows x 15 columns]
+                 correlation  abs_corr
+parameter                             
+marital-status     -0.437678  0.437678
+educational-num     0.332800  0.332800
+relationship       -0.253402  0.253402
+age                 0.237040  0.237040
+hours-per-week      0.227199  0.227199
+capital-gain        0.221034  0.221034
+gender              0.215760  0.215760
+capital-loss        0.148687  0.148687
+education           0.081196  0.081196
+race                0.070844  0.070844
+occupation          0.049787  0.049787
+native-country      0.020103  0.020103
+workclass           0.015659  0.015659
+fnlwgt             -0.007264  0.007264
+Best features:	 ['marital-status' 'educational-num' 'relationship' 'age']
+0.7530400176873756
+0.7864873000664456
+0.7634313508733142
+0.7963855810272701
+0.726730046429361
+0.7758759212322498
+0.6900287419854079
+0.6832932928680773
+## Pipeline(steps=[('scaler', StandardScaler()),
+                ('svc', LinearSVC(random_state=1))]) ACC=0.753040
+## Pipeline(steps=[('scaler', StandardScaler()),
+                ('svc', LinearSVC(random_state=1))]) AUC=0.786487
+## Pipeline(steps=[('scaler', StandardScaler()), ('svc', SVC(random_state=1))]) ACC=0.763431
+## Pipeline(steps=[('scaler', StandardScaler()), ('svc', SVC(random_state=1))]) AUC=0.796386
+## Pipeline(steps=[('scaler', StandardScaler()),
+                ('svc', SVC(kernel='poly', random_state=1))]) ACC=0.726730
+## Pipeline(steps=[('scaler', StandardScaler()),
+                ('svc', SVC(kernel='poly', random_state=1))]) AUC=0.775876
+## Pipeline(steps=[('scaler', StandardScaler()),
+                ('svc', SVC(kernel='sigmoid', random_state=1))]) ACC=0.690029
+## Pipeline(steps=[('scaler', StandardScaler()),
+                ('svc', SVC(kernel='sigmoid', random_state=1))]) AUC=0.683293
