@@ -462,23 +462,23 @@ def plot_validation_curve(classifier_fn, name_of_y_col, name_of_x_cols, dataset,
     test_scores_mean = np.mean(test_scores, axis=1)
     test_scores_std = np.std(test_scores, axis=1)
 
-    import matplotlib.pyplot as plt
+    import matplotlib.pyplot as pltx
 
-    plt.title(title)
-    plt.xlabel(param_name)
-    plt.ylabel("Score")
+    pltx.title(title)
+    pltx.xlabel(param_name)
+    pltx.ylabel("Score")
     #plt.ylim(0.0, 1.1)
     lw = 2
-    plt.semilogx(param_range, train_scores_mean, label="Training score",
+    pltx.semilogx(param_range, train_scores_mean, label="Training score",
                  color="darkorange", lw=lw)
-    plt.fill_between(param_range, train_scores_mean - train_scores_std,
+    pltx.fill_between(param_range, train_scores_mean - train_scores_std,
                      train_scores_mean + train_scores_std, alpha=0.2,
                      color="darkorange", lw=lw)
-    plt.semilogx(param_range, test_scores_mean, label="Cross-validation score",
+    pltx.semilogx(param_range, test_scores_mean, label="Cross-validation score",
                  color="navy", lw=lw)
-    plt.fill_between(param_range, test_scores_mean - test_scores_std,
+    pltx.fill_between(param_range, test_scores_mean - test_scores_std,
                      test_scores_mean + test_scores_std, alpha=0.2,
                      color="navy", lw=lw)
-    plt.legend(loc="best")
+    pltx.legend(loc="best")
 
-    return plt
+    return pltx
