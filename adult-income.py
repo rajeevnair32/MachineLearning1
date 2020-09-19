@@ -10,7 +10,7 @@ from helper import build_model, print_results
 from helper import decision_tree_fn
 from helper import neural_network_fn
 from helper import ada_boosting_fn, gradient_boosting_fn
-from helper import svm_linear_fn, svm_poly_fn, svm_rbf_fn, linear_svm_fn, get_best_svc_model
+from helper import svm_linear_fn, svm_sigmoid_fn, svm_rbf_fn, linear_svm_fn, get_best_svc_model
 from helper import knearest_neighbors_fn
 from helper import find_best_param
 from helper import plot_validation_curve, plot_learning_curve, plot_loss_curve
@@ -23,8 +23,9 @@ adult_df = pd.read_csv('datasets/adult_processed.csv')
 FEATURES = ['marital-status', 'educational-num', 'relationship', 'age']
 fig_path = './figures/adult-income/'
 
+print("Find best parameters")
 # defining parameter range
-param_grid = {'C' : [0.1, 1, 10, 100], 'gamma': [1, 0.1, 0.01, 0.001, 0.0001], 'kernel': ['linear', 'poly', 'rbf']}
+param_grid = {'C' : [0.1, 1, 10, 100], 'gamma': [1, 0.1, 0.01, 0.001, 0.0001], 'kernel': ['linear', 'sigmoid', 'rbf']}
 find_best_param(SVC, 'income', FEATURES, adult_df, param_grid)
 
 # defining parameter range
@@ -51,11 +52,16 @@ find_best_param(DecisionTreeClassifier, 'income', FEATURES, adult_df, param_grid
 param_grid = {'n_neighbors': np.arange(1, 42, 2)}
 find_best_param(KNeighborsClassifier, 'income', FEATURES, adult_df, param_grid)
 
+print("Best parameters - end")
+
+import sys
+sys.exit()
+
 result_dict = {
                'income - kNearestNeighbors': build_model(knearest_neighbors_fn, 'income', FEATURES, adult_df),
                'income - Linear SVM': build_model(linear_svm_fn, 'income', FEATURES, adult_df),
                'income - SVM Linear': build_model(svm_linear_fn, 'income', FEATURES, adult_df),
-               'income - SVM Poly': build_model(svm_poly_fn, 'income', FEATURES, adult_df),
+               'income - SVM Sigmoid': build_model(svm_sigmoid_fn, 'income', FEATURES, adult_df),
                'income - SVM RBF': build_model(svm_rbf_fn, 'income', FEATURES, adult_df),
                'income - Ada Boosting': build_model(ada_boosting_fn, 'income', FEATURES, adult_df),
                'income - Gradient Boosting': build_model(gradient_boosting_fn, 'income', FEATURES, adult_df),

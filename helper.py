@@ -111,11 +111,19 @@ def print_results(result_dict):
 """
 Decision Tree
 """
-def decision_tree_classifier(max_depth=None, max_features=None):
-    return DecisionTreeClassifier(max_depth=max_depth, max_features=max_features)
+def decision_tree_classifier(max_depth=None, criterion='gini', min_samples_split=2):
+    return DecisionTreeClassifier(max_depth=max_depth, criterion=criterion, min_samples_split=min_samples_split)
 
-def decision_tree_fn(x_train, y_train, max_depth=None, max_features=None):
-    model = decision_tree_classifier(max_depth=max_depth, max_features=max_features)
+def decision_tree_fn(x_train, y_train, options={}):
+
+    if 'max_depth' not in options:
+        options['max_depth'] = 1.0
+    if 'criterion' not in options:
+        options['criterion'] = 'gini'
+    if 'min_samples_split' not in options:
+        options['min_samples_split'] = 2
+
+    model = decision_tree_classifier(max_depth=options['max_depth'], criterion=options['criterion'], min_samples_split=options['min_samples_split'])
     model.fit(x_train, y_train)
 
     return model
@@ -123,16 +131,28 @@ def decision_tree_fn(x_train, y_train, max_depth=None, max_features=None):
 """
 Neural Network
 """
-def neural_network_classifier(hidden_layer_sizes=(100,), solver='lbfgs', activation='relu'):
+def neural_network_classifier(hidden_layer_sizes=(100,), solver='lbfgs', activation='relu', learning_rate='constant'):
     return MLPClassifier(random_state=100,
                          hidden_layer_sizes=hidden_layer_sizes,
                          early_stopping=True,
                          max_iter=1000,
                          solver=solver,
-                         activation=activation)
+                         activation=activation,
+                         learning_rate=learning_rate)
 
-def neural_network_fn(x_train, y_train, hidden_layer_sizes=(100,), solver='lbfgs', activation='relu'):
-    model = neural_network_classifier(hidden_layer_sizes=hidden_layer_sizes, solver=solver, activation=activation)
+def neural_network_fn(x_train, y_train, options={}):
+
+    if 'solver' not in options:
+        options['solver'] = 'lbfgs'
+    if 'learning_rate' not in options:
+        options['learning_rate'] = 'constant'
+    if 'activation' not in options:
+        options['activation'] = 'identity'
+
+    model = neural_network_classifier(hidden_layer_sizes=hidden_layer_sizes, 
+                                      solver=options['solver'], 
+                                      learning_rate=options['learning_rate'],
+                                      activation=options['activation'])
     model.fit(x_train, y_train)
 
     return model
@@ -140,20 +160,44 @@ def neural_network_fn(x_train, y_train, hidden_layer_sizes=(100,), solver='lbfgs
 """
 Boosting
 """
-def ada_boosting_classifier(learning_rate=1.0, n_estimators=50):
-    return AdaBoostClassifier(random_state=100, learning_rate=learning_rate, n_estimators=n_estimators)
+def ada_boosting_classifier(algorithm='SAMME.R', learning_rate=1.0, n_estimators=50):
+    return AdaBoostClassifier(random_state=100, algorithm=algorithm, 
+                              learning_rate=learning_rate, n_estimators=n_estimators)
 
-def ada_boosting_fn(x_train, y_train, learning_rate=1.0, n_estimators=50):
-    model = ada_boosting_classifier(learning_rate=learning_rate, n_estimators=n_estimators)
+def ada_boosting_fn(x_train, y_train, options={}):
+
+    if 'algorithm' not in options:
+        options['algorithm'] = 'SAMME.R'
+    if 'learning_rate' not in options:
+        options['learning_rate'] = 1
+    if 'n_estimators' not in options:
+        options['n_estimators'] = 100
+
+    model = ada_boosting_classifier(learning_rate=options['learning_rate'], 
+                                    n_estimators=options['n_estimators'],
+                                    algorithm=options['algorithm'])
     model.fit(x_train, y_train)
 
     return model
 
-def gradient_boosting_classifier(learning_rate=0.1, n_estimators=100):
-    return GradientBoostingClassifier(random_state=100, learning_rate=learning_rate, n_estimators=n_estimators)
+def gradient_boosting_classifier(learning_rate=0.1, n_estimators=100, loss='exponential', criterion='friedman_mse'):
+    return GradientBoostingClassifier(random_state=100, learning_rate=learning_rate, 
+                                      n_estimators=n_estimators, loss=loss, criterion=criterion)
 
-def gradient_boosting_fn(x_train, y_train, learning_rate=0.1, n_estimators=100):
-    model = gradient_boosting_classifier(learning_rate=learning_rate, n_estimators=n_estimators)
+def gradient_boosting_fn(x_train, y_train, options={}):
+    if 'criterion' not in options:
+        options['criterion'] = 'friedman_mse'
+    if 'learning_rate' not in options:
+        options['learning_rate'] = 0.1
+    if 'loss' not in options:
+        options['loss'] = 'exponential'
+    if 'n_estimators' not in options:
+        options['n_estimators'] = 100
+
+    model = gradient_boosting_classifier(learning_rate=options['learning_rate'], 
+                                         n_estimators=options['n_estimators'],
+                                         loss=options['loss'],
+                                         criterion=options['criterion'])
     model.fit(x_train, y_train)
 
     return model
@@ -170,7 +214,7 @@ def get_best_svc_model(name_of_y_col, name_of_x_cols, dataset, test_frac=0.2):
     # defining parameter range
     param_grid = {'C': [0.1, 1, 10, 100],
                   'gamma': [1, 0.1, 0.01, 0.001, 0.0001],
-                  'kernel': ['linear', 'poly', 'rbf']}
+                  'kernel': ['linear', 'sigmoid', 'rbf']}
 
     grid = GridSearchCV(SVC(), param_grid, refit=True, verbose=3)
 
@@ -187,22 +231,27 @@ def get_best_svc_model(name_of_y_col, name_of_x_cols, dataset, test_frac=0.2):
 
     return summarize_classification(y_test, grid_predictions)
 
-def linear_svm_classifier(C=1.0, max_iter=1000, tol=1e-3):
-    return LinearSVC(C=C, max_iter=max_iter, tol=tol)
+def linear_svm_classifier(C=1.0, max_iter=1000, tol=1e-3, loss='squared_hinge'):
+    return LinearSVC(C=C, max_iter=max_iter, tol=tol, loss=loss)
 
 def linear_svm_fn(x_train, y_train, options={}):
     if 'C' not in options:
         options['C'] = 1.0
     if 'max_iter' not in options:
         options['max_iter'] = 1000
+    if 'loss' not in options:
+        options['loss'] = 'squared_hinge'
+    if 'tol' not in options:
+        options['tol'] = 1e-3
 
     model = linear_svm_classifier(C = options['C'],
                                   max_iter= options['max_iter'],
+                                  loss=options['loss'],
                                   tol=options['tol'])
     model.fit(x_train, y_train)
 
-def svm_linear_classifier(C=1.0, max_iter=1000, tol=1e-3):
-    return SVC(kernel='linear', C=C, max_iter=max_iter, tol=tol)
+def svm_linear_classifier(C=1.0, max_iter=1000, tol=1e-3, gamma=1):
+    return SVC(kernel='linear', C=C, max_iter=max_iter, tol=tol, gamma=gamma)
 
 def svm_linear_fn(x_train, y_train, options={}):
     if 'C' not in options:
@@ -210,35 +259,41 @@ def svm_linear_fn(x_train, y_train, options={}):
     if 'max_iter' not in options:
         options['max_iter'] = 1000
     if 'gamma' not in options:
-        options['gamma'] = 0.001
+        options['gamma'] = 1
+    if 'tol' not in options:
+        options['tol'] = 1e-3
 
     model = svm_linear_classifier(C = options['C'],
                                   max_iter= options['max_iter'],
+                                  gamma=options['gamma'],
                                   tol=options['tol'])
     model.fit(x_train, y_train)
 
     return model
 
-def svm_poly_classifier(C=1.0, max_iter=1000, tol=1e-3):
-    return SVC(kernel='poly', C=C, max_iter=max_iter, tol=tol)
+def svm_sigmoid_classifier(C=1.0, max_iter=1000, tol=1e-3, gamma=1):
+    return SVC(kernel='sigmoid', C=C, max_iter=max_iter, tol=tol, gamma=gamma)
 
-def svm_poly_fn(x_train, y_train, options={}):
+def svm_sigmoid_fn(x_train, y_train, options={}):
     if 'C' not in options:
         options['C'] = 1.0
     if 'max_iter' not in options:
         options['max_iter'] = 1000
     if 'gamma' not in options:
-        options['gamma'] = 0.001
+        options['gamma'] = 1
+    if 'tol' not in options:
+        options['tol'] = 1e-3
 
-    model = svm_poly_classifier(C = options['C'],
+    model = svm_sigmoid_classifier(C = options['C'],
                                 max_iter= options['max_iter'],
+                                gamma=options['gamma'],
                                 tol=options['tol'])
     model.fit(x_train, y_train)
 
     return model
 
-def svm_rbf_classifier(C=1.0, max_iter=1000, tol=1e-3):
-    return SVC(kernel='rbf', C=C, max_iter=max_iter, tol=tol)
+def svm_rbf_classifier(C=1.0, max_iter=1000, tol=1e-3, gamma=1):
+    return SVC(kernel='rbf', C=C, max_iter=max_iter, tol=tol, gamma=gamma)
 
 def svm_rbf_fn(x_train, y_train, options={}):
     if 'C' not in options:
@@ -246,10 +301,13 @@ def svm_rbf_fn(x_train, y_train, options={}):
     if 'max_iter' not in options:
         options['max_iter'] = 1000
     if 'gamma' not in options:
-        options['gamma'] = 0.001
+        options['gamma'] = 1
+    if 'tol' not in options:
+        options['tol'] = 1e-3
 
     model = svm_rbf_classifier(C = options['C'],
                                max_iter= options['max_iter'],
+                               gamma=options['gamma'],
                                tol=options['tol'])
     model.fit(x_train, y_train)
 
