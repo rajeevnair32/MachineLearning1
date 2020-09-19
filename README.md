@@ -16,10 +16,10 @@ Summary of the folders:
 
 To run the analysis
 a) for Titanic dataset, run the following command:
-$ python3 titanic.py
+$ python3 titanic.py 2>/dev/null
 
 b) for Adult Income dataset, run the following command:
-$ python3 adult-income.py 
+$ python3 adult-income.py 2>/dev/null
 
 To preprocess the data and get a feel about the input data, run the command:
 a) For Titanic dataset
