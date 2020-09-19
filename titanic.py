@@ -57,15 +57,24 @@ def find_best():
 #find_best()
 
 result_dict = {
-               'Survived - kNearestNeighbors': build_model(knearest_neighbors_fn, 'Survived', FEATURES, titanic_df, options={'k': 33}),
-               'Survived - Linear SVM': build_model(linear_svm_fn, 'Survived', FEATURES, titanic_df, options={'C': 0.1, 'loss': 'squared_hinge'}),
-               'Survived - SVM Linear': build_model(svm_linear_fn, 'Survived', FEATURES, titanic_df, options={'C': 0.1, 'gamma': 1}),
-               'Survived - SVM Sigmoid': build_model(svm_sigmoid_fn, 'Survived', FEATURES, titanic_df, options={'C': 0.1, 'gamma': 1}),
-               'Survived - SVM RBF': build_model(svm_rbf_fn, 'Survived', FEATURES, titanic_df, options={'C': 0.1, 'gamma': 1}),
-               'Survived - Ada Boosting': build_model(ada_boosting_fn, 'Survived', FEATURES, titanic_df, options={'algorithm': 'SAMME.R', 'learning_rate': 1, 'n_estimators': 100}),
-               'Survived - Gradient Boosting': build_model(gradient_boosting_fn, 'Survived', FEATURES, titanic_df, options={'criterion': 'friedman_mse', 'learning_rate': 0.1, 'loss': 'exponential', 'n_estimators': 100}),
-               'Survived - Neural networks': build_model(neural_network_fn, 'Survived', FEATURES, titanic_df, options={'activation': 'identity', 'learning_rate': 'constant', 'solver': 'lbfgs'}),
-               'Survived - Decision_tree': build_model(decision_tree_fn, 'Survived', FEATURES, titanic_df, options={'criterion': 'gini', 'max_depth': 3, 'min_samples_split': 2})
+               'Survived - kNearestNeighbors': build_model(knearest_neighbors_fn, 'Survived', FEATURES, titanic_df,
+                                                           options={'k': 33}),
+               'Survived - Linear SVM': build_model(linear_svm_fn, 'Survived', FEATURES, titanic_df,
+                                                    options={'C': 0.1, 'loss': 'squared_hinge'}),
+               'Survived - SVM Linear': build_model(svm_linear_fn, 'Survived', FEATURES, titanic_df,
+                                                    options={'C': 0.1, 'gamma': 1}),
+               'Survived - SVM Sigmoid': build_model(svm_sigmoid_fn, 'Survived', FEATURES, titanic_df,
+                                                     options={'C': 0.1, 'gamma': 0.1}),
+               'Survived - SVM RBF': build_model(svm_rbf_fn, 'Survived', FEATURES, titanic_df,
+                                                 options={'C': 0.1, 'gamma': 0.01}),
+               'Survived - Ada Boosting': build_model(ada_boosting_fn, 'Survived', FEATURES, titanic_df,
+                                                      options={'algorithm': 'SAMME.R', 'learning_rate': 1, 'n_estimators': 100}),
+               'Survived - Gradient Boosting': build_model(gradient_boosting_fn, 'Survived', FEATURES, titanic_df,
+                                                           options={'criterion': 'friedman_mse', 'learning_rate': 0.1, 'loss': 'exponential', 'n_estimators': 100}),
+               'Survived - Neural networks': build_model(neural_network_fn, 'Survived', FEATURES, titanic_df,
+                                                         options={'activation': 'identity', 'learning_rate': 'constant', 'solver': 'lbfgs'}),
+               'Survived - Decision_tree': build_model(decision_tree_fn, 'Survived', FEATURES, titanic_df,
+                                                       options={'criterion': 'gini', 'max_depth': 3, 'min_samples_split': 2})
                }
 
 # Running code with default values
@@ -74,37 +83,44 @@ plt = print_results(result_dict)
 plt.savefig(fig_path + 'results.png')
 
 title = "Learning Curves for Decision Tree"
-plt = plot_learning_curve(DecisionTreeClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(DecisionTreeClassifier(criterion='gini', max_depth=3, min_samples_split=2),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_dt.png')
 
 title = "Learning Curves for Neural Networks"
-plt = plot_learning_curve(MLPClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(MLPClassifier(activation='identity',learning_rate='constant', solver='lbfgs'),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_neural.png')
 
 title = "Learning Curves for AdaBoost"
-plt = plot_learning_curve(AdaBoostClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(AdaBoostClassifier(algorithm='SAMME.R', learning_rate=1, n_estimators=100),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_adaboost.png')
 
 title = "Learning Curves for GradientBoost"
-plt = plot_learning_curve(GradientBoostingClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(GradientBoostingClassifier(criterion='friedman_mse', learning_rate=0.1, loss='exponential', n_estimators=100),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_gradientboost.png')
 
 title = "Learning Curves for KNeighbors"
-plt = plot_learning_curve(KNeighborsClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(KNeighborsClassifier(n_neighbors=33),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_kneighbors.png')
 
 title = "Learning Curves for SVC"
-plt = plot_learning_curve(SVC(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(SVC(kernel='linear', C=0.1, gamma=1),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_svc.png')
 
 title = "Learning Curves for LinearSVC"
-plt = plot_learning_curve(LinearSVC(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(LinearSVC(C=0.1, loss='squared_hinge'),
+                          'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_linearsvc.png')
 
@@ -112,42 +128,48 @@ plt.savefig(fig_path + 'learning_curve_linearsvc.png')
 param_name = "gamma"
 param_range = np.logspace(-6, -1, 5)
 title='Validation Curve with SVC'
-plt = plot_validation_curve(SVC(), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+plt = plot_validation_curve(SVC(kernel='linear', C=0.1, gamma=1),
+                            'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_svc.png')
 
 param_name = "max_depth"
 param_range = np.arange(1, 21)
 title='Validation Curve with Decision Tree'
-plt = plot_validation_curve(DecisionTreeClassifier(), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+plt = plot_validation_curve(DecisionTreeClassifier(criterion='gini', max_depth=3, min_samples_split=2),
+                            'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_dt.png')
 
 param_name = "min_samples_split"
 param_range = np.arange(2, 21)
 title='Validation Curve with Decision Tree'
-plt = plot_validation_curve(DecisionTreeClassifier(), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+plt = plot_validation_curve(DecisionTreeClassifier(criterion='gini', max_depth=3, min_samples_split=2),
+                            'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_dt2.png')
 
 param_name = "n_estimators"
 param_range = np.arange(10, 500, 10)
 title='Validation Curve with AdaBoost Classifier'
-plt = plot_validation_curve(AdaBoostClassifier(), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+plt = plot_validation_curve(AdaBoostClassifier(algorithm='SAMME.R', learning_rate=1, n_estimators=100),
+                            'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_adaboost.png')
 
 param_name = "n_estimators"
 param_range = np.arange(10, 500, 10)
 title='Validation Curve with GradientBoost Classifier'
-plt = plot_validation_curve(GradientBoostingClassifier(), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+plt = plot_validation_curve(GradientBoostingClassifier(criterion='friedman_mse', learning_rate=0.1, loss='exponential', n_estimators=100),
+                            'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_gradientboost.png')
 
 param_name = "n_neighbors"
 param_range = np.arange(1, 42, 2)
 title='Validation Curve with K Neighbor Classifier'
-plt = plot_validation_curve(KNeighborsClassifier(), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+plt = plot_validation_curve(KNeighborsClassifier(n_neighbors=33),
+                            'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_kneighbors.png')
 
