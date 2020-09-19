@@ -74,37 +74,37 @@ plt = print_results(result_dict)
 plt.savefig(fig_path + 'results.png')
 
 title = "Learning Curves for Decision Tree"
-plt = plot_learning_curve(DecisionTreeClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(DecisionTreeClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_dt.png')
 
 title = "Learning Curves for Neural Networks"
-plt = plot_learning_curve(MLPClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(MLPClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_neural.png')
 
 title = "Learning Curves for AdaBoost"
-plt = plot_learning_curve(AdaBoostClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(AdaBoostClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_adaboost.png')
 
 title = "Learning Curves for GradientBoost"
-plt = plot_learning_curve(GradientBoostingClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(GradientBoostingClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_gradientboost.png')
 
 title = "Learning Curves for KNeighbors"
-plt = plot_learning_curve(KNeighborsClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(KNeighborsClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_kneighbors.png')
 
 title = "Learning Curves for SVC"
-plt = plot_learning_curve(SVC(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(SVC(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_svc.png')
 
 title = "Learning Curves for LinearSVC"
-plt = plot_learning_curve(LinearSVC(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
+plt = plot_learning_curve(LinearSVC(), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_linearsvc.png')
 
