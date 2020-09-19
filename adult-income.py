@@ -54,7 +54,10 @@ def find_best():
     find_best_param(KNeighborsClassifier, 'income', FEATURES, adult_df, param_grid)
 
 # Need to run only once to get best params for respective classifier
-#find_best()
+find_best()
+
+import sys
+sys.exit()
 
 result_dict = {
                'income - kNearestNeighbors': build_model(knearest_neighbors_fn, 'income', FEATURES, adult_df, options={'k': 33}),
