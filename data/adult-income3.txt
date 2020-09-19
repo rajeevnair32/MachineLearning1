@@ -1,0 +1,24 @@
+
+Results from Training Data
+        Classification Type  Accuracy  Precision    Recall  F1 Score  Elapsed Time
+     income - Decision_tree  0.815933   0.738655  0.399086  0.518197      0.017117
+   income - Neural networks  0.810653   0.668056  0.479508  0.558292    206.728401
+ income - Gradient Boosting  0.821185   0.661568  0.572971  0.614091      1.120762
+      income - Ada Boosting  0.824004   0.690287  0.531208  0.600389      5.258715
+           income - SVM RBF  0.684634   0.114313  0.040800  0.060137      2.210586
+       income - SVM Sigmoid  0.248583   0.248583  1.000000  0.398185      0.947099
+        income - SVM Linear  0.659673   0.370225  0.525789  0.434503      0.265408
+        income - Linear SVM  0.814799   0.693196  0.449961  0.545701      1.033470
+ income - kNearestNeighbors  0.823534   0.682030  0.538453  0.601796      0.040285
+
+Results from Testing Data
+Classification Type  Accuracy  Precision    Recall  F1 Score
+                  9  0.813046   0.732877  0.382998  0.503086
+                  8  0.816142   0.665599  0.476606  0.555466
+                  7  0.832062   0.677744  0.604944  0.639278
+                  6  0.817247   0.663308  0.507713  0.575173
+                  5  0.685683   0.138232  0.049072  0.072431
+                  4  0.244887   0.244887  1.000000  0.393428
+                  3  0.655390   0.359428  0.523056  0.426073
+                  2  0.813378   0.701045  0.444150  0.543784
+                  1  0.820122   0.674523  0.534460  0.596378

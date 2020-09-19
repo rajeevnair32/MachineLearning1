@@ -1,0 +1,810 @@
+Fitting 5 folds for each of 120 candidates, totalling 600 fits
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.828, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.818, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.821, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.814, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.825, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.826, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.820, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.822, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.823, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.826, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.821, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.812, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.823, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.825, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.819, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.820, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.813, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.823, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.826, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.818, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.817, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.812, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.822, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.827, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.819, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.819, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.818, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.825, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.829, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.819, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.822, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.815, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.824, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.829, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.824, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.817, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.824, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.828, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.819, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.820, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.816, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.824, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.827, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.819, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.820, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.814, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.823, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.822, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.814, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.811, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.814, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.824, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.813, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.818, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.812, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.829, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.825, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.825, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.829, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.818, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.825, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.819, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.824, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.829, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.819, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.824, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.818, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.823, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.820, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.812, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.823, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.813, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.817, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.828, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.824, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.819, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.825, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.828, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.818, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.824, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.819, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.826, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.829, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.819, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.824, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.819, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.824, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.823, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.809, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.814, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.811, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.813, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.824, total=   2.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.813, total=   2.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.817, total=   2.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.812, total=   2.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.814, total=   2.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.782, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.806, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.813, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.809, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.809, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.823, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.813, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.816, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.812, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.814, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=friedman_mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.828, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.818, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.821, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.814, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=10, score=0.825, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=20 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.826, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=20 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.820, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=20 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.822, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=20 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=20 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=20, score=0.823, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=50 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.826, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=50 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=50 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.821, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=50 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.812, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=50 ..
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=50, score=0.823, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=100 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.826, total=   1.0s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=100 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.819, total=   1.0s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=100 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.820, total=   1.0s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=100 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.813, total=   1.0s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=100 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=100, score=0.823, total=   1.0s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=200 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.826, total=   2.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=200 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.818, total=   2.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=200 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.817, total=   2.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=200 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.812, total=   2.1s
+[CV] criterion=mse, learning_rate=1, loss=deviance, n_estimators=200 .
+[CV]  criterion=mse, learning_rate=1, loss=deviance, n_estimators=200, score=0.822, total=   2.1s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.827, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.819, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.819, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.818, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=10, score=0.825, total=   0.1s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.829, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.819, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.822, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.815, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=20, score=0.824, total=   0.2s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.829, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.824, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.817, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=50, score=0.824, total=   0.5s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.828, total=   0.9s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.819, total=   0.9s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.820, total=   0.9s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.816, total=   0.9s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=100, score=0.824, total=   0.9s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.827, total=   1.8s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.819, total=   1.8s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.820, total=   1.8s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.814, total=   1.8s
+[CV] criterion=mse, learning_rate=1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=1, loss=exponential, n_estimators=200, score=0.823, total=   1.8s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.822, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.814, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.811, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=10, score=0.814, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.824, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.813, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.818, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.812, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.829, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.825, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=50, score=0.825, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.829, total=   1.0s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.818, total=   1.0s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.825, total=   1.0s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.819, total=   1.0s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=100, score=0.824, total=   1.0s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.829, total=   2.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.819, total=   2.0s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.824, total=   2.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.818, total=   2.1s
+[CV] criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=deviance, n_estimators=200, score=0.823, total=   2.1s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.820, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.812, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=10, score=0.809, total=   0.1s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.823, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.813, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.817, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=20, score=0.814, total=   0.2s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.828, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.818, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.824, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.819, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=50, score=0.825, total=   0.5s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.828, total=   0.9s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.818, total=   0.9s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.824, total=   0.9s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.819, total=   0.9s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=100, score=0.826, total=   0.9s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.829, total=   1.8s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.819, total=   1.8s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.824, total=   1.8s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.819, total=   1.8s
+[CV] criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.1, loss=exponential, n_estimators=200, score=0.824, total=   1.8s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.823, total=   1.0s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.809, total=   1.0s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.814, total=   1.0s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.811, total=   1.0s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=100, score=0.813, total=   1.0s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.824, total=   2.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.813, total=   2.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.817, total=   2.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.812, total=   2.1s
+[CV] criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=deviance, n_estimators=200, score=0.814, total=   2.1s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.782, total=   0.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.806, total=   0.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.813, total=   0.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.809, total=   0.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=100, score=0.809, total=   0.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.823, total=   1.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.813, total=   1.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.816, total=   1.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.812, total=   1.9s
+[CV] criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.01, loss=exponential, n_estimators=200, score=0.814, total=   1.9s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=100, score=0.752, total=   1.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.0s
+[CV] criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=deviance, n_estimators=200, score=0.752, total=   2.1s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=10, score=0.752, total=   0.1s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=20, score=0.752, total=   0.2s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=50, score=0.752, total=   0.5s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=100, score=0.752, total=   0.9s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200 
+[CV]  criterion=mse, learning_rate=0.001, loss=exponential, n_estimators=200, score=0.752, total=   1.8s
+[CV] criterion=mae, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mae, learning_rate=1, loss=deviance, n_estimators=10, score=0.782, total= 1.1min
+[CV] criterion=mae, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mae, learning_rate=1, loss=deviance, n_estimators=10, score=0.784, total= 1.1min
+[CV] criterion=mae, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mae, learning_rate=1, loss=deviance, n_estimators=10, score=0.816, total= 1.2min
+[CV] criterion=mae, learning_rate=1, loss=deviance, n_estimators=10 ..
+[CV]  criterion=mae, learning_rate=1, loss=deviance, n_estimators=10, score=0.784, total=  57.9s
+[CV] criterion=mae, learning_rate=1, loss=deviance, n_estimators=10 ..
