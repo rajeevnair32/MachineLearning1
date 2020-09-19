@@ -64,6 +64,7 @@ def compare_results(result_dict):
     COLUMNS = ['Classification Type', 'Accuracy', 'Precision', 'Recall', 'F1 Score', 'Elapsed Time']
     train_df = pd.DataFrame([], columns=COLUMNS)
     test_df = pd.DataFrame([], columns=COLUMNS[:-1])
+    count = 1
     for key in result_dict:
         tmp_arr = pd.DataFrame([[key,
                                  result_dict[key]['training']['accuracy'],
@@ -73,13 +74,14 @@ def compare_results(result_dict):
                                  result_dict[key]['elapsed_time']]], columns=COLUMNS)
         train_df = insert_row(0, train_df, tmp_arr)
 
-        tmp_arr = pd.DataFrame([[key,
+        tmp_arr = pd.DataFrame([[count,
                                  result_dict[key]['test']['accuracy'],
                                  result_dict[key]['test']['precision'],
                                  result_dict[key]['test']['recall'],
                                  result_dict[key]['test']['f1_score'],
                                  ]], columns=COLUMNS[:-1])
         test_df = insert_row(0, test_df, tmp_arr)
+        count = count + 1
 
     return (train_df, test_df)
 
@@ -291,7 +293,7 @@ def svm_sigmoid_fn(x_train, y_train, options={}):
         options['tol'] = 1e-3
 
     model = svm_sigmoid_classifier(C = options['C'],
-                                max_iter= options['max_iter'],
+                                max_iter=options['max_iter'],
                                 gamma=options['gamma'],
                                 tol=options['tol'])
     model.fit(x_train, y_train)

@@ -15,6 +15,10 @@ from helper import knearest_neighbors_fn
 from helper import find_best_param
 from helper import plot_validation_curve, plot_learning_curve, plot_loss_curve
 
+import warnings
+
+warnings.filterwarnings("ignore")
+
 """
 Analyzing Titanic Dataset
 """
@@ -62,9 +66,7 @@ result_dict = {
                'Survived - Linear SVM': build_model(linear_svm_fn, 'Survived', FEATURES, titanic_df,
                                                     options={'C': 0.1, 'loss': 'squared_hinge'}),
                'Survived - SVM Linear': build_model(svm_linear_fn, 'Survived', FEATURES, titanic_df,
-                                                    options={'C': 0.1, 'gamma': 1}),
-               'Survived - SVM Sigmoid': build_model(svm_sigmoid_fn, 'Survived', FEATURES, titanic_df,
-                                                     options={'C': 0.1, 'gamma': 0.1}),
+                                                    options={'C': 0.1, 'gamma': 0.01}),
                'Survived - SVM RBF': build_model(svm_rbf_fn, 'Survived', FEATURES, titanic_df,
                                                  options={'C': 0.1, 'gamma': 0.01}),
                'Survived - Ada Boosting': build_model(ada_boosting_fn, 'Survived', FEATURES, titanic_df,
@@ -76,6 +78,7 @@ result_dict = {
                'Survived - Decision_tree': build_model(decision_tree_fn, 'Survived', FEATURES, titanic_df,
                                                        options={'criterion': 'gini', 'max_depth': 3, 'min_samples_split': 2})
                }
+
 
 # Running code with default values
 plt = print_results(result_dict)
