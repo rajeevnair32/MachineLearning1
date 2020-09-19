@@ -60,13 +60,13 @@ def find_best():
 #find_best()
 
 result_dict = {
-               'income - kNearestNeighbors': build_model(knearest_neighbors_fn, 'income', FEATURES, adult_df, options={'k': 33}),
+               'income - kNearestNeighbors': build_model(knearest_neighbors_fn, 'income', FEATURES, adult_df, options={'k': 35}),
                'income - Linear SVM': build_model(linear_svm_fn, 'income', FEATURES, adult_df, options={'C': 0.1, 'loss': 'hinge'}),
                'income - SVM Linear': build_model(svm_linear_fn, 'income', FEATURES, adult_df, options={'C': 1, 'gamma': 0.1}),
                'income - SVM RBF': build_model(svm_rbf_fn, 'income', FEATURES, adult_df, options={'C': 1, 'gamma': 0.1}),
                'income - Ada Boosting': build_model(ada_boosting_fn, 'income', FEATURES, adult_df, options={'algorithm': 'SAMME.R', 'learning_rate': 1, 'n_estimators': 500}),
                'income - Gradient Boosting': build_model(gradient_boosting_fn, 'income', FEATURES, adult_df, options={'criterion': 'friedman_mse', 'learning_rate': 0.1, 'loss': 'exponential', 'n_estimators': 100}),
-               'income - Neural networks': build_model(neural_network_fn, 'income', FEATURES, adult_df, options={activation='tanh', learning_rate='invscaling', 'solver': 'adam'}),
+               'income - Neural networks': build_model(neural_network_fn, 'income', FEATURES, adult_df, options={'activation':'tanh', 'learning_rate':'invscaling', 'solver': 'adam'}),
                'income - Decision_tree': build_model(decision_tree_fn, 'income', FEATURES, adult_df, options={'criterion': 'gini', 'max_depth': 3, 'min_samples_split': 2})
                }
 
@@ -76,7 +76,7 @@ plt = print_results(result_dict)
 plt.savefig(fig_path + 'results.png')
 
 title = "Learning Curves for Decision Tree"
-plt = plot_learning_curve(DecisionTreeClassifier(), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(DecisionTreeClassifier(criterion='gini', max_depth= 8, min_samples_split=12), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_dt.png')
 
@@ -91,12 +91,12 @@ plt = plot_learning_curve(AdaBoostClassifier(algorithm='SAMME.R', learning_rate=
 plt.savefig(fig_path + 'learning_curve_adaboost.png')
 
 title = "Learning Curves for GradientBoost"
-plt = plot_learning_curve(GradientBoostingClassifier(), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(GradientBoostingClassifier(criterion='friedman_mse', learning_rate=0.1, loss='deviance', n_estimators=100), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_gradientboost.png')
 
 title = "Learning Curves for KNeighbors"
-plt = plot_learning_curve(KNeighborsClassifier(), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
+plt = plot_learning_curve(KNeighborsClassifier(n_neighbors=33), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_kneighbors.png')
 
@@ -121,14 +121,14 @@ plt.savefig(fig_path + 'validation_curve_svc.png')
 param_name = "max_depth"
 param_range = np.arange(1, 21)
 title='Validation Curve with Decision Tree'
-plt = plot_validation_curve(DecisionTreeClassifier(), 'income', FEATURES, adult_df, title, param_name, param_range)
+plt = plot_validation_curve(DecisionTreeClassifier(criterion='gini', max_depth= 8, min_samples_split=12), 'income', FEATURES, adult_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_dt.png')
 
 param_name = "min_samples_split"
 param_range = np.arange(2, 21)
 title='Validation Curve with Decision Tree'
-plt = plot_validation_curve(DecisionTreeClassifier(), 'income', FEATURES, adult_df, title, param_name, param_range)
+plt = plot_validation_curve(DecisionTreeClassifier(criterion='gini', max_depth= 8, min_samples_split=12), 'income', FEATURES, adult_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_dt2.png')
 
@@ -142,14 +142,14 @@ plt.savefig(fig_path + 'validation_curve_adaboost.png')
 param_name = "n_estimators"
 param_range = np.arange(10, 500, 10)
 title='Validation Curve with GradientBoost Classifier'
-plt = plot_validation_curve(GradientBoostingClassifier(), 'income', FEATURES, adult_df, title, param_name, param_range)
+plt = plot_validation_curve(GradientBoostingClassifier(criterion='friedman_mse', learning_rate=0.1, loss='deviance', n_estimators=100), 'income', FEATURES, adult_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_gradientboost.png')
 
 param_name = "n_neighbors"
 param_range = np.arange(1, 42, 2)
 title='Validation Curve with K Neighbor Classifier'
-plt = plot_validation_curve(KNeighborsClassifier(), 'income', FEATURES, adult_df, title, param_name, param_range)
+plt = plot_validation_curve(KNeighborsClassifier(n_neighbors=35), 'income', FEATURES, adult_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_kneighbors.png')
 
