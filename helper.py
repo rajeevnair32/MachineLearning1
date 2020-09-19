@@ -148,8 +148,10 @@ def neural_network_fn(x_train, y_train, options={}):
         options['learning_rate'] = 'constant'
     if 'activation' not in options:
         options['activation'] = 'identity'
+    if 'hidden_layer_sizes' not in options:
+        options['hidden_layer_sizes'] = (100,)
 
-    model = neural_network_classifier(hidden_layer_sizes=hidden_layer_sizes, 
+    model = neural_network_classifier(hidden_layer_sizes=options['hidden_layer_sizes'], 
                                       solver=options['solver'], 
                                       learning_rate=options['learning_rate'],
                                       activation=options['activation'])

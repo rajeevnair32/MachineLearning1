@@ -73,9 +73,6 @@ plt = print_results(result_dict)
 #plt.show()
 plt.savefig(fig_path + 'results.png')
 
-import sys
-sys.exit()
-
 title = "Learning Curves for Decision Tree"
 plt = plot_learning_curve(DecisionTreeClassifier(), 'Survived', FEATURES, titanic_df, title, ylim=(0.7, 1.01))
 #plt.show()
