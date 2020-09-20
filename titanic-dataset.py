@@ -8,11 +8,15 @@ import seaborn as sns
 
 titanic_df = pd.read_csv('datasets/titanic_train.csv')
 
+print("Before:" + str(titanic_df.count()))
+
 # Removing unwanted fields
 titanic_df.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], 'columns', inplace=True)
 
 # Drop null fields
 titanic_df = titanic_df.dropna()
+
+print("After:" + str(titanic_df.count()))
 
 # Visualizing relationships
 

@@ -57,7 +57,7 @@ def find_best():
     find_best_param(KNeighborsClassifier, 'Survived', FEATURES, titanic_df, param_grid)
 
 # Need to run only once to get best params for respective classifier
-#find_best()
+find_best()
 
 result_dict = {
                'Survived - kNearestNeighbors': build_model(knearest_neighbors_fn, 'Survived', FEATURES, titanic_df,
@@ -126,6 +126,17 @@ plt = plot_learning_curve(LinearSVC(C=0.1, loss='squared_hinge'),
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_linearsvc.png')
 
+title = "Learning Curves for Neural Networks"
+plt = plot_learning_curve(MLPClassifier(activation='identity', learning_rate='constant', solver='lbfgs'), 'Survived', FEATURES, titanic_df, title, ylim=(0.4, 1.01))
+#plt.show()
+plt.savefig(fig_path + 'learning_curve_neural.png')
+
+param_name = "alpha"
+param_range = [0.001,0.01, 0.1, 1, 10, 100, 1000]
+title='Validation Curve with Neural Networks'
+plt = plot_validation_curve(MLPClassifier(activation='identity', learning_rate='constant', solver='lbfgs'), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+#plt.show()
+plt.savefig(fig_path + 'validation_curve_neural.png')
 
 param_name = "gamma"
 param_range = np.logspace(-6, -1, 5)
@@ -134,6 +145,20 @@ plt = plot_validation_curve(SVC(kernel='linear', C=0.1, gamma=1),
                             'Survived', FEATURES, titanic_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_svc.png')
+
+param_name = "C"
+param_range = [0.01, 0.1, 1, 10]
+title='Validation Curve with SVC'
+plt = plot_validation_curve(SVC(kernel='linear', gamma=1), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+#plt.show()
+plt.savefig(fig_path + 'validation_curve_svc2.png')
+
+param_name = "C"
+param_range = [0.01, 0.1, 1, 10]
+title='Validation Curve with Linear SVC'
+plt = plot_validation_curve(LinearSVC(loss='squared_hinge'), 'Survived', FEATURES, titanic_df, title, param_name, param_range)
+#plt.show()
+plt.savefig(fig_path + 'validation_curve_linearsvc.png')
 
 param_name = "max_depth"
 param_range = np.arange(1, 21)

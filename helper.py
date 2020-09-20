@@ -480,7 +480,7 @@ def plot_validation_curve(classifier_fn, name_of_y_col, name_of_x_cols, dataset,
     pltx.title(title)
     pltx.xlabel(param_name)
     pltx.ylabel("Score")
-    pltx.ylim(0.0, 1.1)
+    #pltx.ylim(0.0, 1.1)
     lw = 2
     pltx.semilogx(param_range, train_scores_mean, label="Training score",
                  color="darkorange", lw=lw)

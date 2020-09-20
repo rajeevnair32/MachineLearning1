@@ -29,20 +29,20 @@ fig_path = './figures/adult-income/'
 def find_best():
 
     # defining parameter range
-#    param_grid = {'C' : [0.01, 0.1, 0.5, 1], 'gamma': [1, 0.1, 0.01, 0.001, 0.0001], 'kernel': ['linear', 'rbf', 'sigmoid']}
-#    find_best_param(SVC, 'income', FEATURES, adult_df, param_grid)
+    param_grid = {'C' : [0.01, 0.1, 0.5, 1], 'gamma': [1, 0.1, 0.01, 0.001, 0.0001], 'kernel': ['linear', 'rbf', 'sigmoid']}
+    find_best_param(SVC, 'income', FEATURES, adult_df, param_grid)
 
     # defining parameter range
-#    param_grid = {'C' : [0.01, 0.1, 0.5, 1], 'loss': ['hinge', 'squared_hinge']}
-#    find_best_param(LinearSVC, 'income', FEATURES, adult_df, param_grid)
+    param_grid = {'C' : [0.01, 0.1, 0.5, 1], 'loss': ['hinge', 'squared_hinge']}
+    find_best_param(LinearSVC, 'income', FEATURES, adult_df, param_grid)
 
     # defining parameter range
-#    param_grid = {'activation' : ['identity', 'logistic', 'tanh', 'relu'], 'solver' : ['lbfgs','sgd','adam'], 'learning_rate': ['constant','invscaling','adaptive']}
-#    find_best_param(MLPClassifier, 'income', FEATURES, adult_df, param_grid)
+    param_grid = {'activation' : ['identity', 'logistic', 'tanh', 'relu'], 'solver' : ['lbfgs','sgd','adam'], 'learning_rate': ['constant','invscaling','adaptive']}
+    find_best_param(MLPClassifier, 'income', FEATURES, adult_df, param_grid)
 
     # defining parameter range
-#    param_grid = {'n_estimators': [20, 50, 100, 200, 500, 1000], 'learning_rate': [1, 0.1, 0.01, 0.001], 'algorithm' : ['SAMME', 'SAMME.R']}
-#    find_best_param(AdaBoostClassifier, 'income', FEATURES, adult_df, param_grid)
+    param_grid = {'n_estimators': [20, 50, 100, 200, 500, 1000], 'learning_rate': [1, 0.1, 0.01, 0.001], 'algorithm' : ['SAMME', 'SAMME.R']}
+    find_best_param(AdaBoostClassifier, 'income', FEATURES, adult_df, param_grid)
 
     # defining parameter range
     param_grid = {'loss': ['deviance', 'exponential'], 'criterion': ['friedman_mse', 'mse', 'mae'], 'n_estimators': [10, 20, 50, 100, 200], 'learning_rate': [1, 0.1, 0.01, 0.001],}
@@ -57,7 +57,7 @@ def find_best():
     find_best_param(KNeighborsClassifier, 'income', FEATURES, adult_df, param_grid)
 
 # Need to run only once to get best params for respective classifier
-#find_best()
+find_best()
 
 result_dict = {
                'income - kNearestNeighbors': build_model(knearest_neighbors_fn, 'income', FEATURES, adult_df, options={'k': 35}),
@@ -110,6 +110,17 @@ plt = plot_learning_curve(LinearSVC(C=0.1, loss='hinge'), 'income', FEATURES, ad
 #plt.show()
 plt.savefig(fig_path + 'learning_curve_linearsvc.png')
 
+title = "Learning Curves for Neural Networks"
+plt = plot_learning_curve(MLPClassifier(activation='tanh',learning_rate='invscaling', solver='adam'), 'income', FEATURES, adult_df, title, ylim=(0.4, 1.01))
+#plt.show()
+plt.savefig(fig_path + 'learning_curve_neural.png')
+
+param_name = "alpha"
+param_range = [0.001,0.01, 0.1, 1, 10, 100, 1000]
+title='Validation Curve with Neural Networks'
+plt = plot_validation_curve(MLPClassifier(activation='tanh',learning_rate='invscaling', solver='adam'), 'income', FEATURES, adult_df, title, param_name, param_range)
+#plt.show()
+plt.savefig(fig_path + 'validation_curve_neural.png')
 
 param_name = "gamma"
 param_range = np.logspace(-6, -1, 5)
@@ -117,6 +128,20 @@ title='Validation Curve with SVC'
 plt = plot_validation_curve(SVC(C=1, gamma=0.1, kernel='rbf'), 'income', FEATURES, adult_df, title, param_name, param_range)
 #plt.show()
 plt.savefig(fig_path + 'validation_curve_svc.png')
+
+param_name = "C"
+param_range = [0.01, 0.1, 1, 10]
+title='Validation Curve with SVC'
+plt = plot_validation_curve(SVC(C=1, gamma=0.1, kernel='rbf'), 'income', FEATURES, adult_df, title, param_name, param_range)
+#plt.show()
+plt.savefig(fig_path + 'validation_curve_svc2.png')
+
+param_name = "C"
+param_range = [0.01, 0.1, 1, 10]
+title='Validation Curve with Linear SVC'
+plt = plot_validation_curve(LinearSVC(loss='hinge'), 'income', FEATURES, adult_df, title, param_name, param_range)
+#plt.show()
+plt.savefig(fig_path + 'validation_curve_linearsvc.png')
 
 param_name = "max_depth"
 param_range = np.arange(1, 21)
